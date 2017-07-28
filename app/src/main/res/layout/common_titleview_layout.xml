@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_left_icon"
+        style="@style/CustomTextViewStyle"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:minHeight="40dp"
+        android:minWidth="50dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/CustomTextViewStyle"
+        android:layout_centerInParent="true"
+        android:textColor="@color/primary_text"
+        android:lines="1"
+        android:maxWidth="200dp"
+        android:ellipsize="end"
+        android:textSize="@dimen/common_txt_size_18" />
+
+    <FrameLayout
+        android:id="@+id/ly_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="6dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_right_icon"
+            style="@style/CustomTextViewStyle"
+            android:layout_marginRight="10dp"
+            android:gravity="right|center"
+            android:minHeight="50dp"
+            android:minWidth="35dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <View
+        style="@style/CommonDividerVerticalStyle"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

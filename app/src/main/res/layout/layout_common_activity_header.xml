@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CustomAppBarStyle">
+
+    <com.monkeyshen.appframe.appframelibrary.widget.CustomToolbar style="@style/CustomToolbarStyle" />
+
+</android.support.design.widget.AppBarLayout>
