@@ -1,6 +1,5 @@
 package com.monkeyshen.appframe.appframelibrary;
 
-import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.widget.RelativeLayout;
 
@@ -12,10 +11,6 @@ import butterknife.BindView;
 public class MainActivity extends BaseMvpActivity {
 
 
-    @BindView(R.id.content_main)
-    RelativeLayout contentMain;
-    @BindView(R.id.fab)
-    FloatingActionButton fab;
 
     @Override
     public void initView() {

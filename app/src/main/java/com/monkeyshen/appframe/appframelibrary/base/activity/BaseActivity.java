@@ -34,7 +34,6 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseView
      */
     private LoadingDialog mLoadingDialog;
 
-    @BindView(R.id.toolbar)
     CustomToolbar mToolbar;
 
     @Override
@@ -46,6 +45,7 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseView
         setContentView(getContentViewResource());
 
         ButterKnife.bind(this);
+        mToolbar = (CustomToolbar) findViewById(R.id.toolbar);
         if (mToolbar != null) {
             //设置toolbar基础，监听事件、按钮显示
             mToolbar.setListener(this);

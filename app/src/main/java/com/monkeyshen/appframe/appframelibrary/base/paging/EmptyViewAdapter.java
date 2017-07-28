@@ -10,8 +10,6 @@ import android.widget.TextView;
 
 import com.monkeyshen.appframe.appframelibrary.R;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 /**
  * Description:空界面适配器，通过设置状态进行设置空数据显示
@@ -177,16 +175,15 @@ public abstract class EmptyViewAdapter extends RecyclerView.Adapter<RecyclerView
      */
     protected class EmptyViewHolder extends RecyclerView.ViewHolder {
 
-        @BindView(R.id.tv_empty)
         public TextView tvEmptyView;
-        @BindView(R.id.layout_btn)
         public FrameLayout layoutBtn;
-        @BindView(R.id.btn_create)
         public TextView btn;
 
         public EmptyViewHolder(View itemView) {
             super(itemView);
-            ButterKnife.bind(this, itemView);
+            tvEmptyView= (TextView) itemView.findViewById(R.id.tv_empty);
+            layoutBtn= (FrameLayout) itemView.findViewById(R.id.layout_btn);
+            btn= (TextView) itemView.findViewById(R.id.btn_create);
         }
     }
 }

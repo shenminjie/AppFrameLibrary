@@ -173,16 +173,15 @@ public class CustomToolbar extends android.support.v7.widget.Toolbar implements 
         if (mListener == null) {
             return;
         }
-        switch (v.getId()) {
-            case R.id.tv_left_icon:
-                mListener.onLeftIconClickListener(v);
-                break;
-            case R.id.tv_right_icon:
-                mListener.onRightIconClickListener(v);
-                break;
-            case R.id.tv_title:
-                mListener.onMainTitleClickListener(v);
-                break;
+        int id = v.getId();
+        if (id == R.id.tv_left_icon) {
+            mListener.onLeftIconClickListener(v);
+        } else if (id == R.id.tv_right_icon) {
+            mListener.onRightIconClickListener(v);
+
+        } else if (id == R.id.tv_title) {
+            mListener.onMainTitleClickListener(v);
+
         }
     }
 
