@@ -4,12 +4,10 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.widget.RelativeLayout;
 
-import com.monkeyshen.appframe.appframelibrary.base.activity.BaseActivity;
 import com.monkeyshen.appframe.appframelibrary.base.activity.BaseMvpActivity;
 import com.monkeyshen.appframe.appframelibrary.base.mvp.BasePresenter;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class MainActivity extends BaseMvpActivity {
 
