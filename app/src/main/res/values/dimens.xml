@@ -6,6 +6,12 @@
 
     <dimen name="height_toolbar">45dp</dimen>
 
+    <dimen name="mis_image_size">120dp</dimen>
+    <dimen name="mis_space_size">3dp</dimen>
+    <dimen name="mis_folder_cover_size">82dp</dimen>
+    <dimen name="width_multi_image_margin">2dp</dimen>
+
+
     <dimen name="common_txt_size_8">8dp</dimen>
     <dimen name="common_txt_size_12">12dp</dimen>
     <dimen name="common_txt_size_10">10dp</dimen>
