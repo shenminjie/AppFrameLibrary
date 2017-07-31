@@ -18,3 +18,27 @@
 13.zbar 扫一扫
 
 //不想写了，后面有机会再更新=。=#
+
+<br/>
+
+```
+
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+```
+
+
+```
+
+compile 'com.github.shenminjie:AppFrameLibrary:v1.0.5'
+
+```
+
+
+
+
