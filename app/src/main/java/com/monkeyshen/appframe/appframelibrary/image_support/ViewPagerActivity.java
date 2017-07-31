@@ -29,7 +29,6 @@ import com.monkeyshen.appframe.appframelibrary.widget.MultiTouchViewPager;
 import java.io.Serializable;
 import java.util.List;
 
-import me.relex.circleindicator.CircleIndicator;
 import me.relex.photodraweeview.PhotoDraweeView;
 
 /**
@@ -69,10 +68,10 @@ public class ViewPagerActivity extends AppCompatActivity {
             LogUtils.e("smj-----没有数据！");
             return;
         }
-        CircleIndicator indicator = (CircleIndicator) findViewById(R.id.indicator);
+//        CircleIndicator indicator = (CircleIndicator) findViewById(R.id.indicator);
         MultiTouchViewPager viewPager = (MultiTouchViewPager) findViewById(R.id.view_pager);
         viewPager.setAdapter(new DraweePagerAdapter());
-        indicator.setViewPager(viewPager);
+//        indicator.setViewPager(viewPager);
 
         BarUtils.setColor(this, ResourcesCompat.getColor(getResources(), android.R.color.black, getTheme()));
 
