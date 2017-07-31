@@ -33,6 +33,7 @@
         android:layout_alignParentBottom="true"
         android:clickable="true"
         android:orientation="vertical"
+        android:background="@android:color/white"
         app:divider="@drawable/custom_split_line"
         app:showDividers="beginning">
 
