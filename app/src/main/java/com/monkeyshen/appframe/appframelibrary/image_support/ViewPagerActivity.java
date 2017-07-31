@@ -126,7 +126,12 @@ public class ViewPagerActivity extends AppCompatActivity {
             SizeUtils.forceGetViewSize(photoDraweeView, new SizeUtils.onGetSizeListener() {
                 @Override
                 public void onGetSize(View view) {
-                    ImageRequest request = ImageRequestBuilder.newBuilderWithSource(Uri.parse(mUris.get(position)))
+                    String uri = mUris.get(position);
+                    //本地区别
+                    if (!uri.startsWith("http")) {
+                        uri = "file://" + uri;
+                    }
+                    ImageRequest request = ImageRequestBuilder.newBuilderWithSource(Uri.parse(uri))
                             .setResizeOptions(new ResizeOptions(view.getMeasuredWidth(), view.getMeasuredHeight()))
                             .build();
                     PipelineDraweeController controller = (PipelineDraweeController) Fresco.newDraweeControllerBuilder()
