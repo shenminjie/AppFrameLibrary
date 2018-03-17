@@ -3,7 +3,7 @@
 简述:一直以来想做个框架，直接引入，直接编写代码，不需要重新搭建，搭建项目很耗时间，所以做件很适合自己开发的一件事，仅适合于自身快速开发，框架模块以为library形式引入，
 建议下载并且以为module形式引入
 
-###基础框架
+### 基础框架
 
 1.网络框架 okhttp<br/>
 2.图片框架 fresco <br/>
@@ -20,7 +20,7 @@
 13.zbar 扫一扫
 
 
-###陷进<br>
+### 陷进<br>
 1.图片选择框架以及图片查看框架需要自行添加manifest<br/>
 2.application gradle使用需要配置butterknife<br>
    `annotationProcessor 'com.jakewharton:butterknife-compiler:8.2.1`<br/>
